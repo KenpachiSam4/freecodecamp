@@ -1,0 +1,115 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Por favor, preencha este formulário.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
+
+        <label id="number-label" for="number">Número:</label>
+        <input type="number" id="number" name="number" min="1" max="100" placeholder="Digite um número">
+
+        <label for="dropdown">Escolha uma opção:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+        </select>
+
+        <p>Escolha uma opção:</p>
+        <input type="radio" id="opcao1" name="opcao" value="opcao1">
+        <label for="opcao1">Opção 1</label><br>
+        <input type="radio" id="opcao2" name="opcao" value="opcao2">
+        <label for="opcao2">Opção 2</label><br>
+
+        <p>Selecione um ou mais campos:</p>
+        <input type="checkbox" id="campo1" name="campo1" value="Campo1">
+        <label for="campo1">Campo 1</label><br>
+        <input type="checkbox" id="campo2" name="campo2" value="Campo2">
+        <label for="campo2">Campo 2</label><br>
+
+        <label for="comments">Comentários:</label><br>
+        <textarea id="comments" name="comments"></textarea><br>
+
+        <button id="submit" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    
+    background-image: url(https://64.media.tumblr.com/51417c621c9e724935e10fd07ac41ffd/e4a98db6c6132f37-9b/s1280x1920/ce58a3e4ce5569f555758d74d1dd4ce4ca2d9e3c.gifv);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    filter: contrast(1.4);
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#description {
+    color: white;
+    text-align: center;
+}
+
+#survey-form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+** end of undefined **
+
